@@ -1,0 +1,8 @@
+{% extends 'base.html' %}{% block content %}
+<form>
+  {{ form.as_p }}
+  <button type="submit">Submit</button>
+</form>
+{% if xyz != None %}
+<p>"xyz" appears at least once without a "." in front of it: {{ xyz }}</p>
+{% endif %} {% endblock content %}

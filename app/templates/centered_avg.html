@@ -1,0 +1,8 @@
+{% extends 'base.html' %}{% block content %}
+<form>
+  {{ form.as_p }}
+  <button type="submit">Submit</button>
+</form>
+{% if avg != None %}
+<p>The average of all input numbers other than the smallest and largest is: {{ avg }}</p>
+{% endif %} {% endblock content %}

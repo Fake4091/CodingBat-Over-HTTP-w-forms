@@ -1,0 +1,8 @@
+{% extends 'base.html' %}{% block content %}
+<form>
+  {{ form.as_p }}
+  <button type="submit">Submit</button>
+</form>
+{% if total != None %}
+<p>{{ a }} + {{ b }} + {{ c }} = {{ total }}</p>
+{% endif %} {% endblock content %}

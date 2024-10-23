@@ -17,7 +17,11 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
+from app.views import front_view, no_teen_view, xyz_view, centered_avg_view
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
+    path("warmup-2/font-times", front_view, name="front_times"),
+    path("logic-2/no-teen-sum", no_teen_view, name="no_teen"),
+    path("string-2/xyz-there", xyz_view, name="xyz_there"),
+    path("list-2/centered-average", centered_avg_view, name="centered_avg"),
 ]
